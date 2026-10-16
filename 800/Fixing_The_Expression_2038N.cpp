@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin>>t;
+    string s;
+    while (t--){
+        
+        cin>>s;
+        if (s[0] == s[2]) {
+            s[1] = '=';
+        } 
+        else if (s[0] > s[2]) {
+            s[1] = '>';
+        } 
+        else {
+            s[1] = '<';
+        }
+        
+        cout<<s<<"\n";
+}}
